@@ -1,4 +1,4 @@
-网页版 新T树洞 https://thuhollow.github.io/
+网页版 TP树洞 https://thuhollow.github.io/
 
 ## 获取源码
 
@@ -26,13 +26,13 @@ yarn run build
 
 ## 问题反馈
 
-对 新T树洞 网页版的 bug 反馈请在仓库提交 Issue。
+对 TP树洞 网页版的 bug 反馈请在仓库提交 Issue。
 
 欢迎提出功能和 UI 建议，但可能不会被采纳。根据 AGPL，你有权自行实现你的想法。
 
 不方便在 GitHub 上说明的问题可以邮件联系。邮件内容不会被公开。
 
-对 新T树洞 后端服务、客户端、账号、树洞内容的反馈请联系邮件。
+对 TP树洞 后端服务、客户端、账号、树洞内容的反馈请联系邮件。
 
 ## License
 

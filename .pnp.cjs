@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@react-native-community/clipboard", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.5.1"],\
             ["@traptitech/markdown-it-katex", "npm:3.6.0"],\
             ["copy-to-clipboard", "npm:3.3.1"],\
             ["eslint", "npm:8.21.0"],\
@@ -53,9 +54,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:18.2.0"],\
             ["react-lazyload", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:3.2.0"],\
+            ["react-otp-input", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:2.4.0"],\
             ["react-polls", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.2.0"],\
             ["react-scripts", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:5.0.1"],\
             ["react-timeago", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:7.1.0"],\
+            ["react-verification-code-input", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.2.9"],\
+            ["react18-input-otp", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.1.2"],\
             ["workbox-background-sync", "npm:6.5.4"],\
             ["workbox-broadcast-update", "npm:6.5.4"],\
             ["workbox-cacheable-response", "npm:6.5.4"],\
@@ -3719,6 +3723,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "webpack-hot-middleware",\
             "webpack-plugin-serve",\
             "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@react-native-community/clipboard", [\
+        ["npm:1.5.1", {\
+          "packageLocation": "./.yarn/unplugged/@react-native-community-clipboard-virtual-a00659b5b1/node_modules/@react-native-community/clipboard/",\
+          "packageDependencies": [\
+            ["@react-native-community/clipboard", "npm:1.5.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.5.1", {\
+          "packageLocation": "./.yarn/unplugged/@react-native-community-clipboard-virtual-a00659b5b1/node_modules/@react-native-community/clipboard/",\
+          "packageDependencies": [\
+            ["@react-native-community/clipboard", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.5.1"],\
+            ["@types/react", null],\
+            ["@types/react-native", null],\
+            ["react", "npm:18.2.0"],\
+            ["react-native", null]\
+          ],\
+          "packagePeers": [\
+            "@types/react-native",\
+            "@types/react",\
+            "react-native",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14754,6 +14784,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-otp-input", [\
+        ["npm:2.4.0", {\
+          "packageLocation": "./.yarn/cache/react-otp-input-npm-2.4.0-2e61dcd02e-c73230be43.zip/node_modules/react-otp-input/",\
+          "packageDependencies": [\
+            ["react-otp-input", "npm:2.4.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:2.4.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-otp-input-virtual-b3962b5393/0/cache/react-otp-input-npm-2.4.0-2e61dcd02e-c73230be43.zip/node_modules/react-otp-input/",\
+          "packageDependencies": [\
+            ["react-otp-input", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:2.4.0"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-polls", [\
         ["npm:1.2.0", {\
           "packageLocation": "./.yarn/cache/react-polls-npm-1.2.0-2a69b9d2b1-887681a349.zip/node_modules/react-polls/",\
@@ -14888,6 +14944,62 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "packagePeers": [\
             "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-verification-code-input", [\
+        ["npm:1.2.9", {\
+          "packageLocation": "./.yarn/cache/react-verification-code-input-npm-1.2.9-0bfda5775f-734272d45f.zip/node_modules/react-verification-code-input/",\
+          "packageDependencies": [\
+            ["react-verification-code-input", "npm:1.2.9"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.2.9", {\
+          "packageLocation": "./.yarn/__virtual__/react-verification-code-input-virtual-6718faba5d/0/cache/react-verification-code-input-npm-1.2.9-0bfda5775f-734272d45f.zip/node_modules/react-verification-code-input/",\
+          "packageDependencies": [\
+            ["react-verification-code-input", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.2.9"],\
+            ["@types/prop-types", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/prop-types",\
+            "@types/react-dom",\
+            "@types/react",\
+            "prop-types",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react18-input-otp", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/react18-input-otp-npm-1.1.2-795e52a5d6-a7ae886013.zip/node_modules/react18-input-otp/",\
+          "packageDependencies": [\
+            ["react18-input-otp", "npm:1.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.1.2", {\
+          "packageLocation": "./.yarn/__virtual__/react18-input-otp-virtual-c7ab8b4090/0/cache/react18-input-otp-npm-1.1.2-795e52a5d6-a7ae886013.zip/node_modules/react18-input-otp/",\
+          "packageDependencies": [\
+            ["react18-input-otp", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.1.2"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
             "react"\
           ],\
           "linkType": "HARD"\
@@ -16979,6 +17091,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["webhole", "workspace:."],\
+            ["@react-native-community/clipboard", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.5.1"],\
             ["@traptitech/markdown-it-katex", "npm:3.6.0"],\
             ["copy-to-clipboard", "npm:3.3.1"],\
             ["eslint", "npm:8.21.0"],\
@@ -16999,9 +17112,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:18.2.0"],\
             ["react-lazyload", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:3.2.0"],\
+            ["react-otp-input", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:2.4.0"],\
             ["react-polls", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.2.0"],\
             ["react-scripts", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:5.0.1"],\
             ["react-timeago", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:7.1.0"],\
+            ["react-verification-code-input", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.2.9"],\
+            ["react18-input-otp", "virtual:d489c25e2ebeea07458b58e50f8ccfb31c1a2205a90b069d1097b87c37e4691c13f2247338ffb59360c079762786d6bbbc895d4b6a241f03e5878297f15a38ca#npm:1.1.2"],\
             ["workbox-background-sync", "npm:6.5.4"],\
             ["workbox-broadcast-update", "npm:6.5.4"],\
             ["workbox-cacheable-response", "npm:6.5.4"],\

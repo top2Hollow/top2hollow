@@ -72,7 +72,7 @@ export function InfoSidebar(props) {
       <div className="box help-desc-box">
         <p>意见反馈请加tag #意见反馈 或到github后端的issue区。</p>
         <p>
-          新T树洞强烈期待有其他更多树洞的出现，一起分布式互联，构建清华树洞族。详情见
+          TP树洞强烈期待有其他更多树洞的出现，一起分布式互联，构建清华树洞族。详情见
           关于 中的描述。
         </p>
         <p>
@@ -81,7 +81,7 @@ export function InfoSidebar(props) {
       </div>
       <div className="box help-desc-box">
         <p>
-          新T树洞 网页版 by @hole_thu，基于
+          TP树洞 网页版 by @hole_thu，基于
           <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank">
             AGPLv3
           </a>
@@ -93,7 +93,7 @@ export function InfoSidebar(props) {
           开源。
         </p>
         <p>
-          新T树洞 网页版基于
+          TP树洞 网页版基于
           <a
             href="https://github.com/pkuhelper-web/webhole"
             target="_blank"
@@ -121,7 +121,7 @@ export function InfoSidebar(props) {
         </p>
         <hr />
         <p>
-          新T树洞 后端 by @hole_thu，基于
+          TP树洞 后端 by @hole_thu，基于
           <a href="http://www.wtfpl.net/about/" target="_blank">
             WTFPLv2
           </a>
@@ -322,7 +322,7 @@ export class LoginForm extends Component {
                       </p>
                       <p>
                         <small>
-                          新T树洞
+                          TP树洞
                           面向T大学生，通过已验证身份的第三方服务授权登陆。
                         </small>
                       </p>

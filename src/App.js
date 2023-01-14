@@ -155,7 +155,7 @@ class App extends Component {
                       {(do_popup) => (
                         <a href="###" onClick={do_popup}>
                           <span className="icon icon-login" />
-                          &nbsp;登录到 新T树洞
+                          &nbsp;登录到 TP树洞
                         </a>
                       )}
                     </LoginPopup>

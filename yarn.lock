@@ -2134,6 +2134,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-community/clipboard@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@react-native-community/clipboard@npm:1.5.1"
+  peerDependencies:
+    react: ">=16.0"
+    react-native: ">=0.57.0"
+  checksum: 61f993b864804ef43de3a4b33b080d2310d491d7d13bc504e75326a841e0f2715b7c65212cae420fa200688be8881ed4b6731e0f4bad8de2d340c401f598bcea
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.3.1
   resolution: "@rollup/plugin-babel@npm:5.3.1"
@@ -10748,6 +10758,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-otp-input@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "react-otp-input@npm:2.4.0"
+  peerDependencies:
+    react: ^16.2.0
+    react-dom: ^16.2.0
+  checksum: c73230be43fcc4d4abf8c39e9fe546a40637dae3e9633dc0af1727bc6ef14839b7e2d455216208ab718697c40513781740c95a2c300e8c5513954842e18c1dbf
+  languageName: node
+  linkType: hard
+
 "react-polls@npm:^1.2.0":
   version: 1.2.0
   resolution: "react-polls@npm:1.2.0"
@@ -10841,6 +10861,27 @@ __metadata:
   peerDependencies:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
   checksum: cfc3959701f657f7d2766e8ef1a8c2f8b87fdb6e6aa60812dd9d6b68d096740f80976e0a69e08c1bd07f5514f6c82ed01905afea3bb08941dbb9cc49136810d9
+  languageName: node
+  linkType: hard
+
+"react-verification-code-input@npm:^1.2.9":
+  version: 1.2.9
+  resolution: "react-verification-code-input@npm:1.2.9"
+  peerDependencies:
+    prop-types: ^15.5.4
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0
+    react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: 734272d45f8c2ba75ba988817a042b6bc8562791a50b342bf04a55d4d15f12d23faa3e9fd698f7c5a92034695ba17b9fd26dfdb8679f3c47b40904e6a9b04cb4
+  languageName: node
+  linkType: hard
+
+"react18-input-otp@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "react18-input-otp@npm:1.1.2"
+  peerDependencies:
+    react: 16.2.0 - 18
+    react-dom: 16.2.0 - 18
+  checksum: a7ae8860136dc5f52c24971c15c8c2685c2b270b3ce1304fc36cc13af914bec6c67b31ab9a81f2f87ab9bfbdf970e02b7cee05863b7d03b701af9acc28cd4825
   languageName: node
   linkType: hard
 
@@ -12680,6 +12721,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "webhole@workspace:."
   dependencies:
+    "@react-native-community/clipboard": ^1.5.1
     "@traptitech/markdown-it-katex": ^3.6.0
     copy-to-clipboard: ^3.3.1
     eslint: 8.21.0
@@ -12700,9 +12742,12 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-lazyload: ^3.2.0
+    react-otp-input: ^2.4.0
     react-polls: ^1.2.0
     react-scripts: 5.0.1
     react-timeago: ^7.1.0
+    react-verification-code-input: ^1.2.9
+    react18-input-otp: ^1.1.2
     workbox-background-sync: ^6.4.2
     workbox-broadcast-update: ^6.4.2
     workbox-cacheable-response: ^6.4.2

@@ -154,7 +154,7 @@ class ControlBar extends PureComponent {
               className="no-underline control-btn"
               onClick={() => {
                 this.props.show_sidebar(
-                  '新T树洞',
+                  'TP树洞',
                   <InfoSidebar show_sidebar={this.props.show_sidebar} />,
                 );
               }}
@@ -202,12 +202,12 @@ export function Title(props) {
             <span
               onClick={() =>
                 props.show_sidebar(
-                  '新T树洞',
+                  'TP树洞',
                   <InfoSidebar show_sidebar={props.show_sidebar} />,
                 )
               }
             >
-              新T树洞
+              TP树洞
               <sup>{window.config.room || '?'}</sup>
             </span>
           </p>

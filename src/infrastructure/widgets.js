@@ -1,4 +1,5 @@
 import React, { Component, PureComponent } from 'react';
+import ReactCodeInput from 'react-verification-code-input';
 import ReactDOM from 'react-dom';
 
 import TimeAgo from 'react-timeago';
@@ -70,9 +71,14 @@ class LoginPopupSelf extends Component {
     this.state = {
       token_phrase: '',
       already_copy: false,
+      email_addr: '',
+      time: 10,
+      btnDisable:false,
+      btnContent: '发送验证码',
+      code: ''
     };
+    this.input = React.createRef();
   }
-
   setThuhole(e) {
     e.preventDefault();
     alert('T大树洞已经没有啦😭');
@@ -114,100 +120,65 @@ class LoginPopupSelf extends Component {
         window.location.reload();
       });
   }
-
+  handleChange = vals => {
+    if (vals.length >= 6) {
+      console.log('complete, ', vals);
+    } else if (vals.length === 0) {
+      console.log('empty, ', vals);
+    }
+  };
   render() {
-    const { token_phrase, already_copy } = this.state;
+    const { token_phrase, already_copy, email_addr, otp } = this.state;
+    let timeChange;
+    let ti = this.state.time;
+    const clock = ()=>{
+      if (ti > 0) {
+        //当ti>0时执行更新方法
+         ti = ti - 1;
+         this.setState({
+            time: ti,
+            btnContent: ti + "s之内不能再次发送验证码",
+          });
+         console.log(ti);
+      }else{
+        //当ti=0时执行终止循环方法
+        clearInterval(timeChange);
+        this.setState({
+          btnDisable: false,
+          time: 10,
+          btnContent: "发送验证码",
+        });
+      }
+    };
+    const sendCode = () =>{
+      this.setState({
+        btnDisable: true,
+        btnContent: "10s之内不能再次发送验证码",
+      });
+      //每隔一秒执行一次clock方法
+      timeChange = setInterval(clock,1000);
+    };
+    let handleChange = (code) => {
+      this.setState(code)
+    }
     return (
       <div>
         <div className="thuhole-login-popup-shadow" />
         <div className="thuhole-login-popup">
           <h3>直接邮箱登录</h3>
           <p>
-            <input value={token_phrase} onChange={(event) => this.setState({token_phrase: event.target.value})} />
+            <input onChange={(event) => this.setState({ email_addr: event.target.value })} />
           </p>
-          <div className="thuhole-login-popup-info">
-            <ol>
-              <li>
-                <a href="###" onClick={() => this.setState({token_phrase: window.crypto.randomUUID(), already_copy: false})}>
-                  生成
-                </a>
-                或粘贴用来生成token的ID。
-              </li>
-              {!!token_phrase && (
-                <>
-                  <li>
-                    <a href="###" onClick={this.copy_token_phrase.bind(this)}><b>点击此处</b></a>
-                    复制此ID用于在其他设备上登录，当日有效，注意妥善保管。
-                  </li>
-                  <li>
-                    <a href="###" onClick={this.copy_token_hash.bind(this)}><b>点击此处</b></a>
-                    复制用来发送邮件的内容
-                  </li>
-                </>
-              )}
-              {!!already_copy ? (
-                <>
-                  <li>
-                    发送邮件到
-                    <a href={'mailto:' + EMAIL}>{EMAIL}</a>。
-                    不同设备请勿重复发件。<b>不要带中文小尾巴，不要带格式。</b>
-                    示例:
-                    <img src={emailExample} className="li-image"/>
-                  </li>
-                  <li>
-                    后台每15分钟查收一次邮件，等待一段时间后
-                    <a href="###" onClick={this.use_token.bind(this)}><b>点击此处</b></a>
-                    使用此token登录。
-                  </li>
-                </>
-              ) : (
-                <li>...</li>
-              )}
-            </ol>
+          <button type="primary" className="send-verify-button" onClick={sendCode} disabled={this.state.btnDisable}>{this.state.btnContent}</button>
+          <div className="verify-div">
+            <ReactCodeInput
+              ref={this.input}
+              fieldWidth={30}
+              fieldHeight={40}
+              onChange={this.handleChange}
+              onComplete={val => console.log('complete', val)}
+            />
           </div>
-          <br />
-          <h3>第三方认证登录</h3>
-          <p>
-            <a href={window.BACKEND + "_login/gh"} target="_blank"
-              referrerPolicy="origin"
-            >
-              <span className="icon icon-login" />
-              &nbsp;GitHub
-            </a>
-          </p>
-          <p>
-            <a href={window.BACKEND + "_login?p=cs"} target="_blank"
-              referrerPolicy="origin"
-            >
-              <span className="icon icon-login" />
-              &nbsp;闭社
-            </a>
-          </p>
-          <p>
-            <a
-              href={window.BACKEND + "_login?p=thuhole"}
-              target="_blank"
-              onClick={this.setThuhole}
-            >
-              <span className="icon icon-login" />
-              &nbsp;T大树洞
-            </a>
-          </p>
-          <p>
-            <small>前往Telegram群查询15分钟临时token</small>
-            <br />
-            <a href="//t.me/THUChatBot" target="_blank">
-              <span className="icon icon-login" />
-              &nbsp;清华大水群
-            </a>
-          </p>
-          <p>
-            <button type="button" disabled>
-              <span className="icon icon-login" />
-              &nbsp;清华统一身份认证
-            </button>
-          </p>
-          <hr />
           <p>
             <button onClick={this.props.on_close}>取消</button>
           </p>
@@ -215,7 +186,7 @@ class LoginPopupSelf extends Component {
           <div className="thuhole-login-popup-info">
             <p>提醒:</p>
             <ul>
-              <li>新T树洞的匿名性来自隔离用户名与发布的内容，而非试图隔离用户名与真实身份。</li>
+              <li>TP树洞的匿名性来自隔离用户名与发布的内容，而非试图隔离用户名与真实身份。</li>
               <li> 目前一个人可能有多个帐号。</li>
             </ul>
           </div>
